@@ -1,3 +1,4 @@
 ---
-redirect-to: https://danielfore.com/linuxisnotaboutsystray/ 
+redirect_to: https://danielfore.com/linuxisnotaboutsystray/
 ---
+

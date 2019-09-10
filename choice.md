@@ -1,5 +1,4 @@
- ---
-
-redirect-to: http://islinuxaboutchoice.com/
+---
+redirect_to: http://islinuxaboutchoice.com/
 ---
 

@@ -1,4 +1,4 @@
-# islinuxabout.xyz
+# Is Linux About…?
 
 Linux is a kernel. Is Linux about:
 

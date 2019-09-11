@@ -58,11 +58,12 @@ h6 {
 
 h1 {
   font-size: 4rem;
-  line-height: 1em;
   letter-spacing: -0.035em;
+  line-height: 1em;
 }
 
 strong {
+  color: var(--fg-color-alt);
   font-weight: 900;
 }
 

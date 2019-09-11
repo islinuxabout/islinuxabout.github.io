@@ -4,6 +4,7 @@ Linux is a kernel. Is Linux about:
 
 - …[apps](apps)?
 - …[choice](choice)?
+- …[politics](politics)?
 - …[systray](systray)?
 - …[themes](themes)?
 - …[the terminal](terminal)?

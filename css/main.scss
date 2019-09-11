@@ -1,0 +1,80 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+:root {
+--bg-color: #fafafa;
+--fg-color: #452981;
+--fg-color-alt: #7239b3;
+--accent-color: #3689e6;
+
+  @media (prefers-color-scheme: dark) {
+    --bg-color: #452981;
+    --fg-color: #fafafa;
+    --fg-color-alt: #cd9ef7;
+    --accent-color: #8cd5ff;
+  }
+}
+
+html {
+  font-size: 1.1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--fg-color);
+  font-family: Inter, Helvetica, Roboto, "Open Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1rem;
+}
+
+a {
+  color: var(--accent-color);
+  opacity: 0.8;
+  text-decoration: none;
+  text-decoration-skip: ink;
+  transition: opacity 250ms ease;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--fg-color-alt);
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1em;
+  letter-spacing: -0.035em;
+}
+strong {
+  font-weight: 900;
+}
+
+footer {
+  font-size: 0; // Fix inline-block whitespace
+
+  p {
+    display: inline-block;
+    font-size: 0.9rem;
+    width: 50%;
+
+    &:nth-child(even) {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  {% include head.html %}
+  <body class="{% if page.url == '/' %}home {% endif %}">
+    <section>
+      {{ content }}
+    </section>
+    {% capture footer %}{% include footer.md %}{% endcapture %}
+    {{ footer | markdownify }}
+  </body>
+</html>
+

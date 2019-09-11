@@ -1,2 +1,15 @@
- plugins:
+title: "Is Linux About…?"
+description: "Linux is a kernel"
+permalink: /:title/
+theme-color: "#452981"
+gravatar: eaa3cc978770998ea2bd4382935bf0f4
+twitter: CassidyJames
+
+plugins:
   - jekyll-redirect-from
+
+markdown: kramdown
+
+future: false # Allows us to stage posts
+exclude: [Gemfile, Gemfile.lock, vendor]
+

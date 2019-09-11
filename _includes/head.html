@@ -9,6 +9,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="icon" sizes="256x256" href="{{ site.baseurl }}/images/icon-256.png" />
+  <meta itemprop="logo" content="{{ site.baseurl }}/images/icon-256.png" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/imags/icon-256.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/icon-256.png">
+
+  <link rel="alternate" type="application/rss+xml" title="elementary Blog" href="{{ "/feed" | prepend: site.baseurl | prepend: site.url }}" />
+
   <meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}" />
   <meta name="theme-color" content="{% if page.theme-color %}{{ page.theme-color }}{% else %}{{ site.theme-color }}{% endif %}" />
 
@@ -23,6 +30,7 @@
     <meta property="twitter:image" content="{{ image }}" />
   {% else %}
     <meta name="twitter:card" content="summary" />
+    <meta property="twitter:image" content="{{ site.baseurl }}/images/icon-256.png" />
   {% endif %}
   <meta name="twitter:site" content="@{{ site.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />

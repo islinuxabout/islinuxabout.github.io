@@ -1,9 +1,10 @@
 title: "Is Linux About…?"
 description: "Linux is a kernel"
 permalink: /:title/
-theme-color: "#452981"
+theme-color: "#7239b3"
 gravatar: eaa3cc978770998ea2bd4382935bf0f4
 twitter: CassidyJames
+author: Cassidy James Blaede
 
 plugins:
   - jekyll-redirect-from

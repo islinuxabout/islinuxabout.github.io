@@ -9,7 +9,7 @@ redirect_from:
 
 ## No.
 
-While the command-line is an awesome part of what you can do with Linux, it's not necessary to know anything about it to use and love a Linux-based OS.
+While the command line is an awesome part of what you can do with Linux, it's not necessary to know anything about it to use and love a Linux-based OS.
 
 - **Android** is based on the Linux kernel, has billions of users around the world, and **does not expose the command line.**
 

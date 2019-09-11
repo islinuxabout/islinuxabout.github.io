@@ -2,6 +2,7 @@
 
 Linux is a kernel. Is Linux about:
 
+- …[apps](apps)?
 - …[choice](choice)?
 - …[systray](systray)?
 - …[themes](themes)?

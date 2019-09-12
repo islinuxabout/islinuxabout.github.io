@@ -2,6 +2,7 @@
 redirect_from:
   - command-line
   - commandline
+  - terminal
   - terminals
 ---
 

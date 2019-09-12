@@ -4,7 +4,9 @@ permalink: /:title/
 theme-color: "#7239b3"
 gravatar: eaa3cc978770998ea2bd4382935bf0f4
 twitter: CassidyJames
-author: Cassidy James Blaede
+author: Is Linux About…?
+author-link: https://github.com/orgs/islinuxabout/people
+repo: https://github.com/islinuxabout/islinuxabout.github.io
 
 collections:
   desktop-environments:

@@ -5,7 +5,7 @@
     <section>
       {{ content }}
     </section>
-    {% capture footer %}{% include footer.md %}{% endcapture %}
+    {% capture footer %}{% include footer.md author = page.author author-link = page.author-link %}{% endcapture %}
     {{ footer | markdownify }}
   </body>
 </html>

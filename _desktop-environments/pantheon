@@ -1,0 +1,27 @@
+---
+title: Pantheon
+description: Used by default in elementary OS, but available on Fedora, Arch, and other OSes
+cloudproviders:
+  status-icon: true
+  actions: true
+desktop-actions:
+  actions: true
+  icons: planned
+launcher-entry:
+  progress-bar: true
+  badge: true
+mpris:
+  media-info: true
+  player-controls: true
+  album-art: true
+notifications:
+  bubbles: true
+  actions: planned
+  notification-center: true
+  images: true
+  replace: true
+portals:
+  location: planned
+  screencast: planned
+---
+

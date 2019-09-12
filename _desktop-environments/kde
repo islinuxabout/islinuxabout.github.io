@@ -1,0 +1,26 @@
+---
+title: KDE
+cloudproviders:
+  status-icon: false
+  actions: false
+desktop-actions:
+  actions: true
+  icons: true
+launcher-entry:
+  progress-bar: false
+  badge: false
+mpris:
+  media-info: true
+  player-controls: true
+  album-art: true
+notifications:
+  bubbles: true
+  actions: true
+  notification-center: true
+  images: unknown
+  replace: unknown
+portals:
+  location: unknown
+  screencast: unknown
+---
+

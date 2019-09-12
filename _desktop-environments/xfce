@@ -1,0 +1,26 @@
+---
+title: Xfce
+cloudproviders:
+  status-icon: false
+  actions: false
+desktop-actions:
+  actions: true
+  icons: true
+launcher-entry:
+  progress-bar: false
+  badge: false
+mpris:
+  media-info: true
+  player-controls: true
+  album-art: false
+notifications:
+  bubbles: true
+  actions: true
+  notification-center: true
+  images: true
+  replace: true
+portals:
+  location: false
+  screencast: false
+---
+

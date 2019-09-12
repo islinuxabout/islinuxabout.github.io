@@ -1,0 +1,26 @@
+---
+title: MATE
+cloudproviders:
+  status-icon: false
+  actions: false
+desktop-actions:
+  actions: true
+  icons: true
+launcher-entry:
+  progress-bar: false
+  badge: false
+mpris:
+  media-info: true
+  player-controls: true
+  album-art: true
+notifications:
+  bubbles: true
+  actions: true
+  notification-center: false
+  images: true
+  replace: false
+portals:
+  location: false
+  screencast: false
+---
+

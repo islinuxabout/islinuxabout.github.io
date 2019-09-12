@@ -1,0 +1,26 @@
+---
+title: GNOME
+cloudproviders:
+  status-icon: true
+  actions: true
+desktop-actions:
+  actions: true
+  icons: false
+launcher-entry:
+  progress-bar: false
+  badge: false
+mpris:
+  media-info: true
+  player-controls: true
+  album-art: true
+notifications:
+  bubbles: true
+  actions: partial
+  notification-center: true
+  images: true
+  replace: true
+portals:
+  location: true
+  screencast: true
+---
+

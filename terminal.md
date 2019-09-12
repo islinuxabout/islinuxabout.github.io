@@ -5,7 +5,7 @@ redirect_from:
   - terminals
 ---
 
-# Is Linux About the Terminal?
+# [Is Linux About]({{ site.baseurl }}/) the Terminal?
 
 ## No.
 

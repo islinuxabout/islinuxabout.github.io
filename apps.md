@@ -3,7 +3,7 @@ redirect_from:
   - app
 ---
 
-# Is Linux About Apps?
+# [Is Linux About]({{ site.baseurl }}/) Apps?
 
 ## No.
 

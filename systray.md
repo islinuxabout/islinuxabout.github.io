@@ -19,7 +19,7 @@ redirect_from:
 
 {% assign des = site.desktop-environments | sort: "title" %}
 
-# Is Linux About SysTray?
+# [Is Linux About]({{ site.baseurl }}/) SysTray?
 
 ## No.
 

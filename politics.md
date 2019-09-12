@@ -3,7 +3,7 @@ redirect_from:
   - political
 ---
 
-# Is Linux About Politics?
+# [Is Linux About]({{ site.baseurl }}/) Politics?
 
 ## Perhaps.
 

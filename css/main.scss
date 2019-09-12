@@ -6,7 +6,7 @@
 :root {
 --bg-color: #fafafa;
 --bg-color-alt: rgba(0, 0, 0, 0.05);
---fg-color: #452981;
+--fg-color: #333;
 --fg-color-alt: #7239b3;
 --accent-color: #3689e6;
 --negative-fg-color: #a10705;
@@ -17,7 +17,7 @@
 --caveat-bg-color: #fff394;
 
   @media (prefers-color-scheme: dark) {
-    --bg-color: #452981;
+    --bg-color: #333;
     --bg-color-alt: rgba(255, 255, 255, 0.125);
     --fg-color: #fafafa;
     --fg-color-alt: #cd9ef7;

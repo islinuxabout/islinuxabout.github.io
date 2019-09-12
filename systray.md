@@ -1,4 +1,6 @@
 ---
+title: Is Linux About SysTray?
+description: Desktop environments have removed or are removing support for the legacy GtkStatusIcon (aka system tray). However, there are many new, capable, cross-desktop APIs that replace the functionality previously provided by tray icons. Here you can find a list of replacement APIs and see how well-supported they are.
 redirect_from:
   - app-indicator
   - appindicator

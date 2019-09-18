@@ -16,6 +16,6 @@ Linux is a kernel, and has nothing to do with themes. While some desktop environ
 
 - Several app developers are calling for Linux distributions and downstreams to [stop theming their apps](https://stopthemingmy.app/).
 
-- [elementary OS](https://elementary.io) does not support themes.
+- [elementary OS](https://elementary.io) does not support user themes, and consequently supports unique [branding and in-app theming](https://medium.com/elementaryos/developer-tips-branding-your-app-a57cb44d31d3) capabilities.
 
 - [GNOME](https://gnome.org) offers no official support for themes, though there are [efforts to improve the situation](https://discourse.gnome.org/t/gtk-adwaita-and-vendor-styles/1641) with downstream distributors.

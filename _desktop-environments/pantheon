@@ -21,7 +21,9 @@ notifications:
   images: true
   replace: true
 portals:
-  location: planned
-  screencast: planned
+  location-consent: planned
+  location-indication: planned
+  screencast-consent: planned
+  screencast-indication: planned
 ---
 

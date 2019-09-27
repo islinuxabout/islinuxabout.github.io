@@ -357,7 +357,7 @@ If you want to alert the user that something has changed in your app, you can se
 
 ## Portals
 
-XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functions. Desktop environments can use these portals to request consent from users and inform them of portal usage
+XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functions. Desktop environments can use these portals to request consent from users and provide an ongoing indication of portal usage.
 
 <div class="overflow-x">
   <table>
@@ -371,9 +371,9 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
     </thead>
     <tbody>
       <tr>
-        <th>Location</th>
+        <th>Location Consent</th>
         {% for de in des %}
-          {% assign status = de.portals.location %}
+          {% assign status = de.portals.location-consent %}
           {% if status == true %}
             {% assign status = "✔️" %}
           {% elsif status == false %}
@@ -387,9 +387,41 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
         {% endfor %}
       </tr>
       <tr>
-        <th>Screencast</th>
+        <th>Location Indication</th>
         {% for de in des %}
-          {% assign status = de.portals.screencast %}
+          {% assign status = de.portals.location-indication %}
+          {% if status == true %}
+            {% assign status = "✔️" %}
+          {% elsif status == false %}
+            {% assign status = "✖️" %}
+          {% elsif status == "planned" %}
+            {% assign status = "🗋" %}
+          {% elsif status == "partial" %}
+            {% assign status = "◐" %}
+          {% endif %}
+          <td class="{{ status }}">{{ status }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th>Screencast Consent</th>
+        {% for de in des %}
+          {% assign status = de.portals.screencast-consent %}
+          {% if status == true %}
+            {% assign status = "✔️" %}
+          {% elsif status == false %}
+            {% assign status = "✖️" %}
+          {% elsif status == "planned" %}
+            {% assign status = "🗋" %}
+          {% elsif status == "partial" %}
+            {% assign status = "◐" %}
+          {% endif %}
+          <td class="{{ status }}">{{ status }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th>Screencast Indication</th>
+        {% for de in des %}
+          {% assign status = de.portals.screencast-indication %}
           {% if status == true %}
             {% assign status = "✔️" %}
           {% elsif status == false %}

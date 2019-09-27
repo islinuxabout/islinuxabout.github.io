@@ -21,6 +21,10 @@ notifications:
   replace: unknown
 portals:
   location: unknown
-  screencast: unknown
+  location-consent: unknown
+  location-indication: unknown
+  screencast: true
+  screencast-consent: true
+  screencast-indication: unknown
 ---
 

@@ -22,6 +22,10 @@ notifications:
   replace: true
 portals:
   location: planned
+  location-consent: planned
+  location-indication: planned
   screencast: planned
+  screencast-consent: planned
+  screencast-indication: planned
 ---
 

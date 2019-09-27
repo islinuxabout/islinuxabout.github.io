@@ -20,7 +20,11 @@ notifications:
   images: true
   replace: false
 portals:
-  location: false
-  screencast: false
+  location: unknown
+  location-consent: unknown
+  location-indication: false
+  screencast: unknown
+  screencast-consent: unknown
+  screencast-indication: false
 ---
 

@@ -371,6 +371,22 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
     </thead>
     <tbody>
       <tr>
+        <th>Location</th>
+        {% for de in des %}
+          {% assign status = de.portals.location %}
+          {% if status == true %}
+            {% assign status = "✔️" %}
+          {% elsif status == false %}
+            {% assign status = "✖️" %}
+          {% elsif status == "planned" %}
+            {% assign status = "🗋" %}
+          {% elsif status == "partial" %}
+            {% assign status = "◐" %}
+          {% endif %}
+          <td class="{{ status }}">{{ status }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
         <th>Location Consent</th>
         {% for de in des %}
           {% assign status = de.portals.location-consent %}
@@ -390,6 +406,22 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
         <th>Location Indication</th>
         {% for de in des %}
           {% assign status = de.portals.location-indication %}
+          {% if status == true %}
+            {% assign status = "✔️" %}
+          {% elsif status == false %}
+            {% assign status = "✖️" %}
+          {% elsif status == "planned" %}
+            {% assign status = "🗋" %}
+          {% elsif status == "partial" %}
+            {% assign status = "◐" %}
+          {% endif %}
+          <td class="{{ status }}">{{ status }}</td>
+        {% endfor %}
+      </tr>
+      <tr>
+        <th>Screencast</th>
+        {% for de in des %}
+          {% assign status = de.portals.screencast %}
           {% if status == true %}
             {% assign status = "✔️" %}
           {% elsif status == false %}

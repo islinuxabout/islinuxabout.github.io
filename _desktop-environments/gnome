@@ -21,6 +21,10 @@ notifications:
   replace: true
 portals:
   location: true
+  location-consent: true
+  location-indication: true
   screencast: true
+  screencast-consent: true
+  screencast-indication: true
 ---
 

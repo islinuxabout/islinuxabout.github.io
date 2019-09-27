@@ -20,10 +20,8 @@ notifications:
   images: true
   replace: true
 portals:
-  location: unknown
   location-consent: unknown
   location-indication: false
-  screencast: unknown
   screencast-consent: unknown
   screencast-indication: false
 ---

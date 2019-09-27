@@ -357,7 +357,11 @@ If you want to alert the user that something has changed in your app, you can se
 
 ## Portals
 
-XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functions. Desktop environments can use these portals to request consent from users and provide an ongoing indication of portal usage.
+XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functions. Desktop environments can use these portals to request consent from users and provide an ongoing visual indication of portal usage.
+
+### Location
+
+The Location Portal is responsible for providing apps with the device's current physical location.
 
 <div class="overflow-x">
   <table>
@@ -371,23 +375,7 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
     </thead>
     <tbody>
       <tr>
-        <th>Location</th>
-        {% for de in des %}
-          {% assign status = de.portals.location %}
-          {% if status == true %}
-            {% assign status = "✔️" %}
-          {% elsif status == false %}
-            {% assign status = "✖️" %}
-          {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
-          {% elsif status == "partial" %}
-            {% assign status = "◐" %}
-          {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
-        {% endfor %}
-      </tr>
-      <tr>
-        <th>Location Consent</th>
+        <th>Consent</th>
         {% for de in des %}
           {% assign status = de.portals.location-consent %}
           {% if status == true %}
@@ -403,7 +391,7 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
         {% endfor %}
       </tr>
       <tr>
-        <th>Location Indication</th>
+        <th>Indication</th>
         {% for de in des %}
           {% assign status = de.portals.location-indication %}
           {% if status == true %}
@@ -418,24 +406,27 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
           <td class="{{ status }}">{{ status }}</td>
         {% endfor %}
       </tr>
+    </tbody>
+  </table>
+</div>
+
+### Screencast/Recording
+
+The Screencast Portal is responsible for providing apps with the display's or a window's visible content i.e. for recording, streaming, or remote viewing.
+
+<div class="overflow-x">
+  <table>
+    <thead>
       <tr>
-        <th>Screencast</th>
+        <th></th>
         {% for de in des %}
-          {% assign status = de.portals.screencast %}
-          {% if status == true %}
-            {% assign status = "✔️" %}
-          {% elsif status == false %}
-            {% assign status = "✖️" %}
-          {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
-          {% elsif status == "partial" %}
-            {% assign status = "◐" %}
-          {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          <th>{{ de.title }}</th>
         {% endfor %}
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <th>Screencast Consent</th>
+        <th>Consent</th>
         {% for de in des %}
           {% assign status = de.portals.screencast-consent %}
           {% if status == true %}
@@ -451,7 +442,7 @@ XDG Desktop Portals are sandbox-compatible DBus APIs for accessing system functi
         {% endfor %}
       </tr>
       <tr>
-        <th>Screencast Indication</th>
+        <th>Indication</th>
         {% for de in des %}
           {% assign status = de.portals.screencast-indication %}
           {% if status == true %}

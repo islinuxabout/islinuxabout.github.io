@@ -16,6 +16,7 @@ mpris:
 notifications:
   bubbles: true
   actions: partial
+  actions-note: "Implemented in bubbles, but not notification center"
   notification-center: true
   images: true
   replace: true

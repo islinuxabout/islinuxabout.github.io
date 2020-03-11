@@ -57,14 +57,24 @@ If you want to communicate synchronization status or provide actions related to 
           {% assign status = de.cloudproviders.status-icon %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.cloudproviders.status-icon-note %}
+            {% assign note = de.cloudproviders.status-icon-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -73,14 +83,24 @@ If you want to communicate synchronization status or provide actions related to 
           {% assign status = de.cloudproviders.actions %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.cloudproviders.actions-note %}
+            {% assign note = de.cloudproviders.actions-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -108,14 +128,24 @@ If you want to provide quick access to common actions, you can add them to your 
           {% assign status = de.desktop-actions.actions %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.desktop-actions.actions-note %}
+            {% assign note = de.desktop-actions.actions-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -124,14 +154,24 @@ If you want to provide quick access to common actions, you can add them to your 
           {% assign status = de.desktop-actions.icons %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.desktop-actions.icons-note %}
+            {% assign note = de.desktop-actions.icons-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -159,14 +199,24 @@ If you want to communicate progress information for long-running background task
           {% assign status = de.launcher-entry.progress-bar %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.launcher-entry.progress-bar-note %}
+            {% assign note = de.launcher-entry.progress-bar-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -175,14 +225,24 @@ If you want to communicate progress information for long-running background task
           {% assign status = de.launcher-entry.badge %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.launcher-entry.badge-note %}
+            {% assign note = de.launcher-entry.badge-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -210,14 +270,24 @@ If you want the user to be able to access media player controls for you app, you
           {% assign status = de.mpris.media-info %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.mpris.media-info-note %}
+            {% assign note = de.mpris.media-info-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -226,14 +296,24 @@ If you want the user to be able to access media player controls for you app, you
           {% assign status = de.mpris.player-controls %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.mpris.player-controls-note %}
+            {% assign note = de.mpris.player-controls-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -242,14 +322,24 @@ If you want the user to be able to access media player controls for you app, you
           {% assign status = de.mpris.album-art %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.mpris.album-art-note %}
+            {% assign note = de.mpris.album-art-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -277,14 +367,24 @@ If you want to alert the user that something has changed in your app, you can se
           {% assign status = de.notifications.bubbles %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.notifications.bubbles-note %}
+            {% assign note = de.notifications.bubbles-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -293,14 +393,24 @@ If you want to alert the user that something has changed in your app, you can se
           {% assign status = de.notifications.actions %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.notifications.actions-note %}
+            {% assign note = de.notifications.actions-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -309,14 +419,24 @@ If you want to alert the user that something has changed in your app, you can se
           {% assign status = de.notifications.notification-center %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.notifications.notifications-center-note %}
+            {% assign note = de.notifications.notifications-center-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -325,14 +445,24 @@ If you want to alert the user that something has changed in your app, you can se
           {% assign status = de.notifications.images %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.notifications.images-note %}
+            {% assign note = de.notifications.images-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -341,14 +471,24 @@ If you want to alert the user that something has changed in your app, you can se
           {% assign status = de.notifications.replace %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.notifications.replace-note %}
+            {% assign note = de.notifications.replace-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -380,14 +520,24 @@ The Location Portal is responsible for providing apps with the device's current 
           {% assign status = de.portals.location-consent %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.portals.location-consent-note %}
+            {% assign note = de.portals.location-consent-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -396,14 +546,24 @@ The Location Portal is responsible for providing apps with the device's current 
           {% assign status = de.portals.location-indication %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.portals.location-indication-note %}
+            {% assign note = de.portals.location-indication-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>
@@ -431,14 +591,24 @@ The Screencast Portal is responsible for providing apps with the display's or a 
           {% assign status = de.portals.screencast-consent %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.portals.screenshot-consent-note %}
+            {% assign note = de.portals.screencast-consent-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
       <tr>
@@ -447,14 +617,24 @@ The Screencast Portal is responsible for providing apps with the display's or a 
           {% assign status = de.portals.screencast-indication %}
           {% if status == true %}
             {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
           {% elsif status == false %}
             {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
             {% assign status = "🗋" %}
+            {% assign note = "Planned" %}
           {% elsif status == "partial" %}
             {% assign status = "◐" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
           {% endif %}
-          <td class="{{ status }}">{{ status }}</td>
+          {% if de.portals.screenshot-indication-note %}
+            {% assign note = de.portals.screencast-indication-note %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
     </tbody>

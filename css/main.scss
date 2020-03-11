@@ -140,6 +140,10 @@ footer {
   }
 }
 
+td {
+  cursor: default;
+}
+
 #no,
 .✖️ {
   color: var(--negative-fg-color);

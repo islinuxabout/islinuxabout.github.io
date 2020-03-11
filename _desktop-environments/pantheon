@@ -21,7 +21,8 @@ notifications:
   images: true
   replace: true
 portals:
-  location-consent: planned
+  location-consent: partial
+  location-consent-note: "Implemented via GeoClue, but not yet a Portal"
   location-indication: planned
   screencast-consent: planned
   screencast-indication: planned

@@ -62,10 +62,10 @@ If you want to communicate synchronization status or provide actions related to 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -88,10 +88,10 @@ If you want to communicate synchronization status or provide actions related to 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -133,10 +133,10 @@ If you want to provide quick access to common actions, you can add them to your 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -159,10 +159,10 @@ If you want to provide quick access to common actions, you can add them to your 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -204,10 +204,10 @@ If you want to communicate progress information for long-running background task
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -230,10 +230,10 @@ If you want to communicate progress information for long-running background task
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -275,10 +275,10 @@ If you want the user to be able to access media player controls for you app, you
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -301,10 +301,10 @@ If you want the user to be able to access media player controls for you app, you
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -327,10 +327,10 @@ If you want the user to be able to access media player controls for you app, you
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -372,10 +372,10 @@ If you want to alert the user that something has changed in your app, you can se
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -398,10 +398,10 @@ If you want to alert the user that something has changed in your app, you can se
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -424,10 +424,10 @@ If you want to alert the user that something has changed in your app, you can se
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -450,10 +450,10 @@ If you want to alert the user that something has changed in your app, you can se
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -476,10 +476,10 @@ If you want to alert the user that something has changed in your app, you can se
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -525,10 +525,10 @@ The Location Portal is responsible for providing apps with the device's current 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -551,10 +551,10 @@ The Location Portal is responsible for providing apps with the device's current 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -596,10 +596,10 @@ The Screencast Portal is responsible for providing apps with the display's or a 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}
@@ -622,10 +622,10 @@ The Screencast Portal is responsible for providing apps with the display's or a 
             {% assign status = "✖️" %}
             {% assign note = "Not implemented" %}
           {% elsif status == "planned" %}
-            {% assign status = "🗋" %}
+            {% assign status = "📝️" %}
             {% assign note = "Planned" %}
           {% elsif status == "partial" %}
-            {% assign status = "◐" %}
+            {% assign status = "🛠️" %}
             {% assign note = "Partially implemented" %}
           {% elsif status == "unknown" %}
             {% assign status = "❓️" %}

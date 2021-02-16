@@ -26,12 +26,12 @@
     {% else %}
       {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
     {% endif %}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:image" content="{{ image }}" />
   {% else %}
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:image" content="{{ site.baseurl }}/images/icon-256.png" />
+    {% assign image = "/images/card.png" | site.baseurl | prepend: site.url %}
   {% endif %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image" content="{{ image }}" />
+
   <meta name="twitter:site" content="@{{ site.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />
 

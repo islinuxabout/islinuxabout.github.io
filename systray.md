@@ -1,5 +1,5 @@
 ---
-description: Desktop environments have removed or are removing support for the legacy GtkStatusIcon (aka system tray). However, there are many new, capable, cross-desktop APIs that replace the functionality previously provided by tray icons. Here you can find a list of replacement APIs and see how well-supported they are.
+description: Popular desktop environments have dropped the legacy concept of a SysTray. Here’s a list of newer, capable, cross-desktop APIs to use instead.
 
 redirect_from:
   - app-indicator
@@ -23,7 +23,9 @@ redirect_from:
 
 ## No.
 
-Desktop environments have removed or are removing support for the legacy GtkStatusIcon (aka system tray). However, there are many new, capable, cross-desktop APIs that replace the functionality previously provided by tray icons. Here you can find a list of replacement APIs and see how well-supported they are.
+Popular desktop environments have dropped the legacy concept of a SysTray (system tray, notification area, status icons, app indicators, tray icons, etc.). However, there are many newer, more capable, and cross-desktop APIs that replace the functionality previously provided by these icons.
+
+Here you can find a list of replacement APIs and see how well-supported they are.
 
 ### Additional Resources
 

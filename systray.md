@@ -27,8 +27,10 @@ Desktop environments have removed or are removing support for the legacy GtkStat
 
 ### Additional Resources
 
-- [“Growing Beyond the System Tray”](https://www.youtube.com/watch?v=fPFdV-Z69Lo) talk by Daniel Foré at Linux App Summit 2019
-- [“Developer Tips: Backgrounding & System Integration”](https://blog.elementary.io/developer-tips-backgrounding-system-integration/) blog post by Cassidy James Blaede for elementary
+- [“Growing Beyond the System Tray”](https://www.youtube.com/watch?v=fPFdV-Z69Lo) talk by Daniel Foré at Linux App Summit (2019)
+- [“Developer Tips: Backgrounding & System Integration”](https://blog.elementary.io/developer-tips-backgrounding-system-integration/) by Cassidy James Blaede for elementary (2018)
+- [“Status Icons and GNOME”](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/) by Allan Day for GNOME (2017)
+- [“Farewell to the notification area”](https://ubuntu.com/blog/notification-area) by Matthew Paul Thomas for Ubuntu (2010)
 
 ## I want to…
 

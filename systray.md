@@ -1,5 +1,6 @@
 ---
 description: Desktop environments have removed or are removing support for the legacy GtkStatusIcon (aka system tray). However, there are many new, capable, cross-desktop APIs that replace the functionality previously provided by tray icons. Here you can find a list of replacement APIs and see how well-supported they are.
+
 redirect_from:
   - app-indicator
   - appindicator
@@ -23,6 +24,11 @@ redirect_from:
 ## No.
 
 Desktop environments have removed or are removing support for the legacy GtkStatusIcon (aka system tray). However, there are many new, capable, cross-desktop APIs that replace the functionality previously provided by tray icons. Here you can find a list of replacement APIs and see how well-supported they are.
+
+### Additional Resources
+
+- [“Growing Beyond the System Tray”](https://www.youtube.com/watch?v=fPFdV-Z69Lo) talk by Daniel Foré at Linux App Summit 2019
+- [“Developer Tips: Backgrounding & System Integration”](https://blog.elementary.io/developer-tips-backgrounding-system-integration/) blog post by Cassidy James Blaede for elementary
 
 ## I want to…
 

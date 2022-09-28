@@ -12,7 +12,7 @@
 {% endif %}
 
 
-© {{ site.time | date: '%Y' }} [{{ author }}]({{ author-link }})
+© {{ site.time | date: '%Y' }} [{{ author }}]({{ author-link }}) • [Public stats](https://plausible.io/islinuxabout.xyz)
 
 [Contribute to this site]({{ site.repo }})
 

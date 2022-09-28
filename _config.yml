@@ -1,5 +1,5 @@
 title: "Is Linux About…?"
-description: "Linux is a kernel. So what’s it about?"
+description: "Linux is a kernel. So what’s it really about?"
 permalink: /:title/
 theme-color: "#7239b3"
 gravatar: eaa3cc978770998ea2bd4382935bf0f4
@@ -7,6 +7,7 @@ twitter: CassidyJames
 author: Is Linux About…?
 author-link: https://github.com/orgs/islinuxabout/people
 repo: https://github.com/islinuxabout/islinuxabout.github.io
+domain: islinuxabout.xyz
 
 collections:
   desktop-environments:
@@ -20,4 +21,3 @@ markdown: kramdown
 
 future: false # Allows us to stage posts
 exclude: [README.md, Gemfile, Gemfile.lock, vendor]
-

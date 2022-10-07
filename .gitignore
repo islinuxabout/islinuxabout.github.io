@@ -1,4 +1,10 @@
-*~
+# Site build artifacts
 _site/
-Gemfile.lock
 
+# Let GitHub Pages manage this
+Gemfile.lock
+vendor/
+
+# Temporary files from various editors
+*~
+unsaved\ file*

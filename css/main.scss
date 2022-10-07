@@ -90,6 +90,13 @@ strong {
   font-weight: 900;
 }
 
+blockquote {
+  border-left: 0.25em solid;
+  color: var(--fg-color-alt);
+  margin-left: 0.25em;
+  padding-left: 0.5em;
+}
+
 footer {
   font-size: 0; // Fix inline-block whitespace
   margin-top: 4rem;

@@ -7,8 +7,8 @@ desktop-actions:
   actions: true
   icons: true
 launcher-entry:
-  progress-bar: false
-  badge: false
+  progress-bar: true
+  badge: true
 mpris:
   media-info: true
   player-controls: true
@@ -17,8 +17,9 @@ notifications:
   bubbles: true
   actions: true
   notification-center: true
-  images: unknown
-  replace: unknown
+  images: true
+  replace: true
+  inline-reply: true
 portals:
   location-consent: unknown
   location-indication: unknown

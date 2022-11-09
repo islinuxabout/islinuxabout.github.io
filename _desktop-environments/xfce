@@ -19,7 +19,7 @@ notifications:
   notification-center: true
   images: true
   replace: true
-  inline-reply: true
+  inline-reply: false
 portals:
   location-consent: unknown
   location-indication: false

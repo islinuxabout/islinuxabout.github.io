@@ -20,6 +20,7 @@ notifications:
   notification-center: true
   images: true
   replace: true
+  inline-reply: true
 portals:
   location-consent: partial
   location-consent-note: "Implemented via GeoClue, but not yet a Portal"

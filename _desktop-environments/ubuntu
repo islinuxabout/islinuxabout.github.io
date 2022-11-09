@@ -20,6 +20,7 @@ notifications:
   notification-center: true
   images: true
   replace: true
+  inline-reply: true
 portals:
   location-consent: true
   location-indication: true

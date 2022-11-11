@@ -2,7 +2,7 @@
 
 **Linux is a kernel**, low-level code that forms the base layer of an operating system. Usually when people talk about “using Linux,” they’re talking about using some Linux-based operating system like Ubuntu, Fedora, Arch, Endless OS, Pop!_OS, elementary OS, etc.
 
-These Linux-based operating systems run one of several **desktop environments** which make up what is typically thought of as the OS’s user experience like GNOME, KDE, XFCE, etc. or their own version of a desktop environment.
+These Linux-based operating systems run one of several **desktop environments** which make up what is typically thought of as the OS’s user experience like GNOME, KDE Plasma, XFCE, etc. or their own version of a desktop environment.
 
 Sometimes the people and organizations behind these desktop environments are also working to build a cohesive **ecosystem** of apps and tools that use a common set of design patterns and other shared approaches.
 

@@ -499,6 +499,32 @@ If you want to alert the user that something has changed in your app, you can se
           <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
         {% endfor %}
       </tr>
+      <tr>
+        <th>Inline Reply</th>
+        {% for de in des %}
+          {% assign status = de.notifications.inline-reply %}
+          {% if status == true %}
+            {% assign status = "✔️" %}
+            {% assign note = "Implemented" %}
+          {% elsif status == false %}
+            {% assign status = "✖️" %}
+            {% assign note = "Not implemented" %}
+          {% elsif status == "planned" %}
+            {% assign status = "📝️" %}
+            {% assign note = "Planned" %}
+          {% elsif status == "partial" %}
+            {% assign status = "🛠️" %}
+            {% assign note = "Partially implemented" %}
+          {% elsif status == "unknown" %}
+            {% assign status = "❓️" %}
+            {% assign note = "Unknown" %}
+          {% endif %}
+          {% if de.notifications.inline-reply %}
+            {% assign note = de.notifications.inline-reply %}
+          {% endif %}
+          <td class="{{ status }}" title="{{ note }}">{{ status }}</td>
+        {% endfor %}
+      </tr>
     </tbody>
   </table>
 </div>

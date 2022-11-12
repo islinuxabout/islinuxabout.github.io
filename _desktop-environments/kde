@@ -24,6 +24,6 @@ portals:
   location-consent: unknown
   location-indication: unknown
   screencast-consent: true
-  screencast-indication: unknown
+  screencast-indication: true
 ---
 

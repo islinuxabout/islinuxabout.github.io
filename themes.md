@@ -14,7 +14,7 @@ Linux is a kernel, and has nothing to do with themes. While some desktop environ
 
 - [FreeDesktop.org](https://freedesktop.org) specifications try to ensure different desktops' _basic features_ are inter-compatible, but does not address visual style.
 
-  - There are specs for _icon_ and _sound_ themes, but even these are both incomplete and outdated.
+  - There are specs for _icon_ and _sound_ themes, but some desktops do not support these.
 
 - [KDE Plasma](https://kde.org/plasma-desktop) officially supports themes, color schemes, accent colors, and FreeDesktop-compatible icon themes, as applied to both Plasma itself and apps using the Qt and GTK toolkits.
 

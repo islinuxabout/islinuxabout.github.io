@@ -12,6 +12,7 @@ redirect_from:
 Linux is a kernel, not an app platform. While you can use some apps across several different Linux-based OSes, many apps are only designed to integrate with a specific platform like GNOME, KDE, elementary OS, etc.
 
 - Ubuntu, one of the most popular Linux desktop distributions, **uses their own Snap packaging technology and app store** which is not included in any other Linux-based OS.
+
 - Some platforms like [elementary OS AppCenter](https://developer.elementary.io) **require apps to use the native toolkit** for the OS, and only include those apps made specifically for elementary OS in their app store by default.
 
 ## Maybe?

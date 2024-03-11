@@ -1,8 +1,100 @@
+#########################################################
+# Disallow crawlers and scrapers for training AI/ML/LLM #
+#########################################################
+
+# Amazonbot (Alexa)
+# Used to "improve our services"
+# https://developer.amazon.com/amazonbot
+
+User-agent: Amazonbot
+Disallow: /
+
+# Anthropic (Claude)
+# https://www.anthropic.com/
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Applebot (Siri)
+# Crawler for all Apple products, including Siri and Spotlight Suggestions
+
+User-agent: Applebot
+Disallow: /
+
+# Bytedance (Doubao, TikTok)
+# Note, does not seem to respect this
+# https://darkvisitors.com/agents/bytespider
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Bytedance
+Disallow: /
+
+# Common Crawl
+# Used by Google and likely others
+# https://commoncrawl.org/ccbot
+
 User-agent: CCBot
+Disallow: /
+
+# Cohere
+# https://cohere.com/
+
+User-agent: cohere-ai
+Disallow: /
+
+# FacebookBot (Meta Facebook)
+# https://developers.facebook.com/docs/sharing/bot
+
+User-agent: FacebookBot
+Disallow: /
+
+# Google Extended (Gemini)
+# Gemini apps, Vertex AI generative APIs, and other Google models
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers#google-extended
+
+User-agent: Google-Extended
+Disallow: /
+
+# GPT (OpenAI)
+# https://platform.openai.com/docs/gptbot
+# https://platform.openai.com/docs/plugins/bot
+
+User-agent: GPTBot
 Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: GPTBot
+# ImageSift (Hive)
+# Scraper to train generative-AI
+# https://imagesift.com/about
+
+User-agent: ImagesiftBot
+Disallow: /
+
+# Omgili Bot
+# Commercial crawler using scraped data
+# https://webz.io/blog/web-data/what-is-the-omgili-bot-and-why-is-it-crawling-your-website/
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# Semrush
+# Commercial crawler selling marketing and competitor data to be used with AI
+# https://www.semrush.com/bot/
+# https://www.semrush.com/apps/contentshake/
+
+User-agent: SemrushBot
+Disallow: /
+
+# YouBot (you.com)
+# AI chat
+# https://about.you.com/youbot/
+
+User-agent: YouBot
 Disallow: /
